@@ -24,5 +24,8 @@
                 </tr>
             @endforeach
         </table>
+        <button>
+            <a href="{{route('comics.create')}}">Aggiungi un fumetto all'archivio</a>
+        </button>
     </div>
 @endsection
