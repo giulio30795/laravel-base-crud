@@ -5,6 +5,16 @@
         <button class="btn btn-warning">
             <a class="text-decoration-none text-light" href="{{route('comics.create')}}">Aggiungi un fumetto all'archivio</a>
         </button>
+
+        @if (session('delete_comic'))
+            <div class="alert alert-success">
+
+                {{session('delete_comic')}}
+                Cancellato con successo
+            </div>
+
+        @endif
+
         <table class="table">
             <tr class="text-center">
                 <th>ID</th>
@@ -33,7 +43,8 @@
                             @method('DELETE')
 
                             <input type="submit" class="btn btn-danger"
-                            value="Elimina">
+                            value="Elimina"
+                            onclick="return confirm('Sicuro di voler cancellare il fumetto?')">
                         </form>
                     </td>
                 </tr>
