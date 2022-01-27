@@ -25,7 +25,7 @@
                             <a class="text-decoration-none text-light" href="{{ route('comics.show', $comic->id) }}">Vedi Dettagli</a>
                         </button>
                         <button class="btn  btn-primary mx-2">
-                            <a class="text-decoration-none text-light" href="{{ route('comics.show', $comic->id) }}">Modifica</a>
+                            <a class="text-decoration-none text-light" href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
                         </button>
                         <button class="btn  btn-danger">
                             <a class="text-decoration-none text-light" href="{{ route('comics.show', $comic->id) }}">Elimina</a>
